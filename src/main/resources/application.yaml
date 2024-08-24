@@ -1,0 +1,33 @@
+server:
+  port: 8081
+
+jwt:
+  secret: FailureAndMistakesPaveTheRoadToSuccessGetComfortableFailing
+  lifetime: 30m
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: local
+
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+     ddl-auto: create-drop
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+
+path_to_json:
+  /home/user/Documents/SimpleExamples/spring-jwt/src/main/resources/test_report.json
+
+fieldName1: salesAndTrafficByAsin
+fieldName2: salesAndTrafficByDate
+key1: parentAsin
+key2: date
+collectionName: test_report
